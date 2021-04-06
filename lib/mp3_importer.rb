@@ -5,6 +5,13 @@ def initialize(filename)
   @path = filename
 end
 
+def files
+
+end
+
+def import
+
+end
 
 
 end
