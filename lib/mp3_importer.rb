@@ -10,7 +10,7 @@ def files
   @files.delete_if {|f| f == ".." || f == "."}
 end
 
-def import
+def import(file)
 self.files.each do |file|
   song = Song.new_by_filename(file)
   Artist.all << song.artist unless Artist.all.include?(song.artist)
