@@ -26,8 +26,8 @@ def songs
 @songs
 end
 
-def self.find_or_create_by_name(artist_name)
-array = self.all.select {|s| s.name == name} ? Artist.new = array[0] : Artist.new = artist_name
+def self.find_or_create_by_name(name)
+self.all.detect {|a| a.name == name} || Artist.new(name)
 end
 
 end
