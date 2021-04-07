@@ -19,7 +19,7 @@ def self.all
 end
 
 def add_song(song)
-Song.all.select {|x| x.artist == self}
+@songs << song
 end
 
 def songs
