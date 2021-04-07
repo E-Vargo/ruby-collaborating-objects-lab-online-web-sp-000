@@ -7,7 +7,7 @@ end
 
 def files
   @files = Dir.entries(@path)
-  @files.delete_if {|f| f == "." || f == ".."}
+  @files.delete_if {|f| f == ".." || f == "."}
 end
 
 def import
