@@ -31,7 +31,7 @@ self.all.detect {|a| a.name == name} || Artist.new(name)
 end
 
 def print_songs(name)
-
+  songs.each {|s| puts s.name}
 end
 
 end
