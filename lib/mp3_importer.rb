@@ -7,6 +7,7 @@ end
 
 def files
   @files = Dir.entries(@path)
+  puts @files
 end
 
 def import
