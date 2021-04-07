@@ -22,7 +22,7 @@ def self.new_by_filename(file_name)
 end
 
 def artist_name=(artist_name)
-  name_array = Artist.all.select {|x| x.name == artist_name} ? Artist.new = name_array : Artist.new = artist_name
+  Artist.find_or_create_by_name(artist_name)
 end
 
 end
