@@ -23,7 +23,7 @@ Song.all.select {|x| x.artist == self}
 end
 
 def songs
-Song.all.select {|x| x.artist == self}
+@songs
 end
 
 def self.find_or_create_by_name(artist_name)
