@@ -18,8 +18,8 @@ def self.all
 end
 
 def self.new_by_filename(file_name)
-name = file_name.split("-")[1]
-artist_name=(name)
+Song.new(file_name.split("-")[0])
+
 end
 
 def artist_name=(name)
