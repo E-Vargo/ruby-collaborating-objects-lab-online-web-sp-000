@@ -10,8 +10,8 @@ def files
   @files.delete_if {|f| f == ".." || f == "."}
 end
 
-def import
-
+def import(filename)
+Song.new_by_filename(filename)
 end
 
 
